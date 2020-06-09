@@ -1,0 +1,17 @@
+<h1>Creando un nuevo calculo</h1>
+
+{{#if errores}}
+  {{#each errores}}
+    <div class="alert alert-danger" role="alert">
+        {{error}}
+    </div>
+ {{/each}}
+{{/if}}
+
+<form method="POST" action="/nuevo_proyecto">
+ <div class="form-group">
+      <label for="calculo">Resultado del calculo</label>
+      <imput type="double" class="form-control"></imput>
+ </div>
+  <button type= "submit" class="btn btn-primary">Calcular</button>
+</form>
